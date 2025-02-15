@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale= 1">
+    <meta charset="utf-8">
+    <title>me valentine pls</title>
+</head>
+<body>
+    <div class="img-center">
+        <img id="cat sad"src="cat-wet.gif" alt="wet cat" draggable="false">
+    </div>
+    <div id="proposal" style="text-align: center">
+        <p> be a good girl and press yes.</p>
+    </div>
+    <div class="img-center">
+        <button id="button-1" type="button">
+            yes!
+        </button>
+    </div>
+
+    <audio autoplay>
+        <source src="Vine boom sound effect.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        let yay_button = document.getElementById("button-1")
+        let yay_button_style = window.getComputedStyle(yay_button);
+        let yay_button_width = parseInt(yay_button_style.width);
+        let yay_button_height = parseInt(yay_button_style.height);
+
+
+        let new_width = yay_button_width + 200;
+        let new_height = yay_button_height + 200;
+        yay_button.style.width = `${new_width}px`;
+        yay_button.style.height = `${new_height}px`;
+
+        yay_button_width = new_width;
+        yay_button_height = new_height;
+
+
+
+        yay_button.addEventListener('click', function(){
+            window.location.href = "success.html"
+        })
+
+        let deny_button = document.getElementById("button-2");
+
+        deny_button.addEventListener('click', function(){
+            window.location.href = "bruh.html"
+        })
+
+    </script>
+</body>
